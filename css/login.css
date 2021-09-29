@@ -1,0 +1,173 @@
+*{
+    margin: 0rem;
+    padding: 0rem;
+}
+/* html{
+    font-size: 62.5%;
+  
+  } */
+body{
+    font-family: 'Rubik', sans-serif;
+}
+/* <<<<<<<<<<from validation>>>>>>>>>> */
+#userErrror p, #passErrror p, #emailError p{
+    color: rgb(9, 253, 9);
+}
+#userErrror, #passErrror, #emailError{
+    color: rgb(255, 59, 59);
+    font-size: 1.1rem;
+}
+.wind{
+    background: rgb(61, 60, 60, 0.8);
+    width: 100vw;
+    height: 100vh;
+   top: 00px;
+    position: fixed;
+    z-index: 10;
+    transition: all 1s;
+    opacity: 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+.wind  .fa-times{
+    font-size: 38px;
+    color: rgb(1, 133, 23);
+    right: 10%;
+    top: 20%;
+    position: absolute;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.bacimg{
+    background-color: black;
+}
+.bacimg img{
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+position: absolute;
+opacity: 1;
+background-color: black;
+}
+.login-box{
+   background-image: linear-gradient(39deg, #04691e 50%, #1a5e05 50%);
+   width: 45rem;
+    height: 30rem;
+   position: fixed;
+    top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+box-sizing: border-box;
+padding: 1rem 3rem;
+box-shadow: .5rem 1rem .5rem .3rem #234e1a;
+z-index: 999;
+}
+.from{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   margin-top: 2rem;
+}
+.login-box .login{
+    font-size: 2.5rem;
+    padding: .5rem 1.5rem;
+    border-radius: 4rem 1rem 4rem;
+    outline: none;
+}
+
+.login-box .singUp{
+    font-size: 2.5rem;
+    float: right;
+    padding: .5rem 1.5rem;
+    border-radius: 4rem 1rem 4rem;
+    outline: none;
+}
+
+.text-box{
+    width: 20rem;
+    padding: .8rem 0px;
+    margin: .8rem 0px;
+    border-bottom: .1rem solid rgb(0, 0, 0);
+    display: flex;
+    color: white;
+}
+.text-box i{
+    margin-right: .7rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.text-box input{
+    border: none;
+outline: none;
+background: none;
+font-size: 1.4rem;
+color: white;
+}
+
+.submit{
+    padding: .4rem 8rem;
+    font-size: 1.5rem;
+    background: none;
+    color: white;
+    cursor: pointer;
+    border: .2rem solid blue;
+    outline: none;
+    border-radius: 0px 0px 2rem 2rem;
+}
+.submit:hover{
+    background-color: #0c09b9;
+    color: rgb(255, 255, 255);
+    border-radius: 2rem 2rem 0px 0px ;
+    transition: all .7s linear;
+}
+
+ .checkBox{
+    margin: 1rem 1rem 3rem 0;
+    text-align: left;
+display: inline;
+border: .1rem solid white;
+outline: none;
+}
+ span{
+    /* position: absolute; */
+    display: inline;
+    color: white;
+    font-size: 1.2rem;
+}  
+#resigtar{
+    visibility: hidden;
+    transition: 1s linear;
+}
+.active{
+    background-color: blue;
+    color: white;
+}
+/* 
+@media screen and (max-width: 800px){
+    html{
+        font-size: 55%;
+      }
+}
+
+@media screen and (max-width: 640px){
+    html{
+        font-size: 45%;
+      }
+}
+
+@media screen and (max-width: 480px){
+    html{
+        font-size: 35%;
+      }
+}
+
+@media screen and (max-width: 320px){
+    html{
+        font-size: 30%;
+      }
+} */

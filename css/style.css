@@ -1,0 +1,758 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* NAVBER MENU */
+li.nav-item {
+    padding: 0px 25px;
+}
+.navbar-light .navbar-brand img{
+    height: 50px;
+}
+.containerHeading span img{
+    height: 40px;
+}
+.dropdownMenu {
+    background-color: rgba(69, 52, 85, 0.555);
+    transform: translateY(-20%);
+    opacity: 0;
+    transition: all .5s;
+    position: absolute;
+    z-index: 1;
+    margin-left: -40px;
+    margin-top: 8px;
+    border-radius: 0px 0px 20px 20px;
+}
+/* .childNavberopen{
+    background-color: rgba(69, 52, 85, 0.555);
+    transform: translateY(-20%);
+    opacity: 0;
+    transition: all .5s;
+    position: absolute;
+    margin-left: -40px;
+    margin-top: 20px;
+    margin-left: 110px;
+}
+ .childNavberopen:hover{
+    transform: translateY(0%);
+    opacity: 1;
+    z-index: 222;
+} */
+.gallrey:hover .dropdownMenu{
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.dropdownMenu ul{
+    list-style: none;
+}
+.dropdownMenu ul li:hover{
+    color: chartreuse !important;
+}
+
+
+/* sticky Navber */
+.bgNav{
+    background-image: url("../images/slider-1.jpg");
+    height: 100vh;
+    width: 100%;
+    background-repeat:no-repeat;
+    position: relative;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: #17421ea2;
+    overflow: hidden;
+}
+.bg-light{
+    background-color: rgba(69, 52, 85, 0.555) !important;
+}
+.addNavClass{
+    position: fixed;
+  top: 0;
+  width: 100vw;
+    height: 80px;
+    background-color: rgb(0, 144, 55) !important;
+    z-index: 9;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(255 255 255);
+}
+.mainCart{
+    padding: 10px;
+    background-color: black;
+    position: relative;
+}
+.cartNumber{
+    position: absolute;
+    top: 1px;
+    right: 2px;
+    border: 0px;
+    background: none;
+}
+/* End Navber Icon  */
+.conEndNav .row{
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    top: -75px;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 5px 10px 18px #eeeeee;
+}
+.endNav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.endNav p{
+    font-size: 16px;
+}
+.icon{
+ display: inline-block;
+    text-align: center;
+    line-height: 58px;
+    font-size: 30px;
+    color: #fff;
+    height: 65px;
+    width: 65px;
+    border: none;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    background: #85c441
+}
+.callBtn:hover{
+background-color: rgb(35, 211, 35);
+color: white;
+}
+.imagesinto img{
+    height: 270px;
+    background-repeat:no-repeat;
+    position: absolute;
+    background-position: center;
+    right: 100px;
+    bottom: 100px;
+    animation-name: example;
+     animation-duration: 1.5s;
+     animation-delay: 0;
+     animation-direction: alternate;
+     animation-iteration-count: infinite;
+}
+.bannerText{
+    position: absolute;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+.bannerText h2{
+color: white;
+font-size: 50px;
+}
+
+@keyframes example {
+ 0%   {bottom: 15vh; }
+/* 25%  {bottom: 50vh;} */
+/* 50%  {top: 50vh;     transform: scale(1.2);
+}  */
+100% {bottom: 30vh;     transform: scale(1.2);
+}
+}
+/* <!-- Main container Heading --> */
+.containerHeading{
+text-align: center;
+}
+.fa-apple-alt{
+    color: red;
+    margin-bottom: 10px;
+}
+.containerHeading p{
+font-size: 16px;
+}
+/* <!-- Popular Dishes Container --> */
+/* .popularDishesMainu{
+    display: flex;
+} */
+.popularDeshesHeading{
+    margin-top: 55px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.popularDeshes{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.popularDeshesImage{
+   max-width: 100px;
+   height: 100px;
+}
+.popularDeshes span{
+    font-size: 12px;
+    font-weight: bold;
+}
+.popularDeshes::before {
+    background: url(../images/hover-01.png);
+    opacity: 0;
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 80px;
+    width: 50px;
+    transition: all 0.4s ease-in-out;
+    transform: translateX(100%);
+    z-index: 1;
+}
+.popularDeshes:hover:before {
+    opacity: 1;
+    transform: translateX(0);
+}
+.popularDeshes:hover:after {
+    opacity: 1;
+    transform: translateX(0);
+}
+.popularDeshes:after {
+    background: url(../images/hover-02.png);
+    opacity: 0;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 80px;
+    width: 50px;
+    transition: all 0.4s ease-in-out;
+    transform: translateX(-100%);
+    z-index: 1;
+}
+/* <!-- Second POPULAR FOOD  --> */
+.secpopularManu{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.secCard{
+    position: relative;
+    margin: 40px 0px;
+}
+.addTOCard{
+    font-weight:500;
+    width: 140px;
+    text-align: center;
+  padding: 10px 20px;
+  background-color: rgb(76, 143, 8);
+  color: white;
+  font-size: 18px;
+  border-radius: 50px;
+  position: absolute;
+top: 0px;
+opacity: 0;
+cursor: pointer;
+}
+.cartContainer:hover .addTOCard{
+opacity: 1;
+top: 80px;
+transition: all .9s;
+}
+.cartContainer::before{
+    content: " ";
+    background-color: rgb(108, 207, 133);
+    position: absolute;
+    width: 100%;
+    height: 0;
+    z-index: -1;
+    opacity: 1;
+    border-radius: 20px;
+    opacity: 0;
+    z-index: -1;
+}
+.cartContainer:hover{
+    border: none;
+    transition: all .6s;
+    box-shadow: 10px 5px 5px rgb(161, 145, 145);
+}
+.cartContainer:hover:before{
+    transition: all .4s;
+    opacity: 1;
+    height: 100%;
+}
+.cartContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 390px;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: relative;
+    padding: 10px;
+}
+.seccardImg{
+    height: 170px;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+.cartContainer label, .secCard h2, .menuPrice{
+  font-size: 18px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+.secCard h2{
+    color: red;
+}
+.secCard h2:hover{
+    color: rgb(9, 185, 216);
+}
+.cart{
+    color: white;
+}
+.cart p{
+    display: inline;
+}
+.cartContainer label:hover{
+color: rgb(255, 255, 255);
+cursor: pointer;
+}
+/* call button */
+.call{
+    color: rgb(0, 255, 34);
+    border: 1px solid rgb(0, 255, 21);
+}
+/* <!-- START MENU SECTION --> */
+.menuItem{
+    background-color: #b1e995;
+    border: none;
+    z-index: 1;
+    border-radius: 45%;
+}
+.foodMenu{
+    position: relative;
+}
+.menuItem::before{
+content: " ";
+background-color: rgb(108, 207, 133);
+width: 0;
+height: 0;
+top: 0;
+left: 0;
+position: absolute;
+z-index: -1;
+border-radius: 5%;
+}
+.menuItem:hover{
+    border-radius: 5%;
+}
+.menuItem:hover::before{
+    transition: all .3s;
+    height: 100%;
+    width: 100%;
+}
+.menuAddtoCart{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 8px 11px;
+    background-color: rgb(0, 144, 55);
+    border: none;
+    color: white;
+    opacity: 0;
+    border-radius: 5%;
+}
+.menuItem:hover .menuAddtoCart{
+    bottom: 30px;
+    right: 40px;
+    transition: all 1s;
+    opacity: 1;
+}
+.menu h1{
+    margin-top: 30px !important;
+    margin-bottom: 50px !important;
+}
+/* .<!-- WHY CHOOSE US -->{} */
+.whyChooseUs, .footer{
+    width: 100%;
+    color: white;
+    background-color: rgb(0, 68, 26);
+    padding-top: 60px;
+    margin-top: 70px;
+    padding-bottom: 60px;
+}
+.whyChooseUs p{
+    font-size: 14px;
+    margin-bottom: 35px;
+    margin: 0px;
+}
+.whyChooseUs h1{
+    font-size: 40px;
+}
+.aboutImage .fas{
+     width: 100px;
+     height: 100px;
+    border: 1px solid black;
+    border-radius: 50%;
+    color: rgb(26, 206, 9);
+    font-size: 50px;
+    transform: rotateY(360deg);
+}
+.aboutImage .fas:hover{
+    transition: all .9s;
+    transform: rotateY(0deg);
+}
+
+/* OUR TEAM */
+.ourTeam h1{
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+.ourTeam{
+    margin-top: 80px;
+}
+.card-heading{
+font-size: 18px;
+}
+.Chefsimage::before{
+    content: " ";
+width: 100%;
+height: 0;
+background-color: rgb(0, 0, 0);
+z-index: 1;
+position: absolute;
+transform: rotateX(540deg);
+}
+.Chefsimage{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    }
+.Chefsimage:hover::before{
+transform: rotateX(0deg);
+transition: all .9s;
+height: 100%;
+opacity: .6;
+}
+
+/* //solial icon */
+.socialIcon {
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+}
+.socialIcon span .fab{
+width: 50px;
+height: 50px;
+border-radius: 50%;
+z-index: 2;
+opacity: 0;
+font-size: 22px;
+color: rgb(11, 180, 76);
+position: relative;
+cursor: pointer;
+bottom: -30px;
+}
+.socialIcon span .fab:hover{
+    background-color: rgb(15, 180, 78) !important;
+    color: chartreuse;
+}
+.Chefsimage:hover .socialIcon span .fab{
+   transform: translateY(-80px);
+   opacity: 1;
+    transition: all 1s;
+}
+.chefBox{
+    border: none;
+}
+
+/* ADD TO CARD */
+.addtoCard{
+    display: flex;
+    background-color: white;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    box-shadow: 1px 10px 10px 1px rgba(0, 0, 255, .2);
+    align-items: center;
+overflow: hidden;
+}
+.addtoCard img{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    padding: 7px;
+    margin: 10px;
+}
+.remove{
+    border: 2px solid rgb(44, 53, 44);
+    border-radius: 20%;
+    width: 130px;
+    height: 100px;
+    overflow: hidden;
+}
+.remove::before{
+    background: rgb(61, 60, 60, 0.8);
+    position: absolute;
+    content: "remove";
+    border-radius: 20%;
+    width: 130px;
+    color: white;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    cursor: pointer;
+    transform: translateX(30px);
+    overflow: hidden;
+}
+.remove:hover::before{
+opacity: 1;
+transition: all .7s;
+transform: translateX(-3px);
+overflow: hidden;
+}
+/* //ORDER Footer */
+.popCard{
+    background: rgb(61, 60, 60, 0.8);
+    width: 100vw;
+    height: 0;
+   top: 00px;
+    position: fixed;
+    z-index: 10;
+    transition: all 1s;
+    opacity: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.cartDiv{
+    padding-top: 20px;
+    flex-direction: column;
+    background-color: #ffffff;
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+    text-align: center;
+    min-height: 60vh;
+}
+
+.cardFooter {
+    height: 50px;
+    background-color: aquamarine;
+    box-shadow: 1px 10px 10px 1px rgba(0, 0, 255, .2);
+    margin-bottom: 10px;
+}
+.totalItems {
+    display: flex;
+}
+.cardes{
+    display: flex;
+    justify-content: center;
+}
+
+.addPOPclass{
+    opacity: 1;
+    height: 100vh;
+    transition: all 1s;
+    top: 0;
+    overflow-y: scroll;
+}
+/* CROSS ICON CART DIV */
+.cartDiv span .fa-times-circle{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+.cartDiv span .fa-times-circle:hover{
+    color: rgb(0, 255, 34);
+}
+.cartDivHeading{
+    font-size: 20px;
+}
+
+/* footer */
+.firstFooter, .middleFooter, .lastFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.middleFooter img{
+    height: 150px;
+}
+.footerIcon{
+    flex-direction: row;
+    display: flex;
+}
+.footerIcon .fab{
+width: 30px;
+height: 30px;
+ border:1px solid yellow;
+ margin: 8px;
+ justify-content: center;
+ display: flex;
+ align-items: center;
+ border-radius: 10px;
+ cursor: pointer;
+}
+.footerIcon .fab:hover{
+    color: rgb(0, 68, 26);
+    background-color: white;
+}
+.footer ul{
+    list-style: none;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 1024px) {
+    /* NAVBER  */
+    .bgNav {
+        height: 70vh;
+    }
+    .bannerText {
+        position: absolute;
+        top: 50%;
+        left: 20% !important;
+        transform: translate(0%, -0%) !important;
+    }
+    .imagesinto img{
+        height: 170px;
+    }
+    /* FIRST POPULAR DESHES */
+.popularDeshes {
+    margin-bottom: 20px;
+}
+.popularDeshes::before, .popularDeshes::after {
+    display: none;
+}
+/* SECTION POPULAR DESHES */
+
+    .cartContainer{
+        border: none;
+        box-shadow: 10px 11px  11px 5px rgb(161, 145, 145);
+    }
+    .cart p{
+        display: none;
+    }
+ .addTOCard{
+     height: auto;
+     font-size: 10px;
+        opacity: 1;
+        top: 10px;
+        right: 10PX;
+        width: auto;
+    }
+    .seccardImg {
+        height: 130px;
+    }
+    .cartContainer {
+    height: auto;
+    }
+    .cartContainer::before{
+    display: none;
+    }
+    .cartContainer:hover .addTOCard{
+        opacity: 1;
+        top: 0px;
+        }
+ /* MENU SECTION */
+.card::before{
+    display: none;
+}
+.menuItem {
+border-radius: 5px;
+}
+
+.menuAddtoCart{
+    opacity: 1;
+    bottom: 20px;
+    right: 40px;
+    border-radius: 5px;
+}
+/* ABOUT SECTION */
+.socialIcon span .fab{
+    transform: translateY(-80px);
+    opacity: 1;
+ }
+.Chefsimage::before{
+display: none;
+}
+}
+@media screen and (max-width: 990px) {
+ /* MENU SECTION */
+ .menuAddtoCart{
+    font-size: 13px;
+ }
+ .card-text{
+    font-size: 13px;
+}
+
+}
+
+
+@media screen and (max-width: 768px) {
+    /* ADDTO CART */
+    .remove::before{
+        width: auto;
+        height: auto;
+        background-color: white;
+        color: black;
+    }
+    .remove {
+        width: auto;
+        height: auto;
+    }
+    .addtoCard{
+        height: 90px;
+    }
+    .addtoCard img {
+        height: 70px;
+        width: 70px;
+        border-radius: 0%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .cartDiv span .fa-times-circle {
+        top: 9px;
+    }
+/* END NAVBER SECTION */
+.imagesinto img{
+   display: none;
+}
+.conEndNav .row{
+    height: auto;
+}
+.img-fluid {
+    max-width: auto;
+    height: 130px !important;
+}}
+@media screen and (max-width: 576px) {
+    /* naVBER */
+    .bgNav {
+        height: 100vh;
+    }
+    .bannerText {
+        top: 50%;
+        left: 0% !important;
+        transform: translate(0%, -0%) !important;
+    }
+/* FIRST POPULAR DESHES */
+.popularDeshesImage {
+   width: auto;
+    height: 60px;
+}}
+@media screen and (max-width: 480px) {
+    .bgNav {
+        height: 100vh;
+    }
+.btnContainer {
+    font-size: 16px;
+}
+.menuButton {
+    font-size: 16px;
+    background-color: rgb(20, 187, 123);
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+}
